@@ -1,0 +1,5 @@
+# plugin
+
+```
+krab plugin CMD
+```

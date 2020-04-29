@@ -1,0 +1,5 @@
+# init
+
+```
+krab init
+```
