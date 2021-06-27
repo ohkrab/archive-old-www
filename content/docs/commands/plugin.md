@@ -1,5 +1,0 @@
-# plugin
-
-```
-krab plugin CMD
-```

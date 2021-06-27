@@ -5,4 +5,6 @@ type: docs
 
 # Krab
 
-Work in progress...
+Krab is a migration and automation tool for PostgreSQL based on HCL syntax.
+
+Work in progress 🦀.
