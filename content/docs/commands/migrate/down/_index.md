@@ -11,11 +11,19 @@ At the beginning of an operation advisory lock is acquired to prevent other oper
 ## Usage
 
 ```sh
-krab migrate <set> down [version]
+krab migrate down [set] [version]
 ```
 
 ### Options
 
 - `set` - name of the set to migrate.
 - `version` - migration ID to rollback.
+
+## Example
+
+For `default` [migration set](/docs/configuration/migration/) and [migration](/docs/configuration/migration/) version `20060102150405` you would use:
+
+```sh
+krab migrate down default 20060102150405
+```
 

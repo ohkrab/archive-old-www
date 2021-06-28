@@ -12,10 +12,18 @@ At the beginning of an operation advisory lock is acquired to prevent other migr
 ## Usage
 
 ```sh
-krab migrate <set> up
+krab migrate up [set]
 ```
 
 ### Options
 
 - `set` - name of the set to migrate.
+
+## Example
+
+For `default` [migration set](/docs/configuration/migration_set/) you would use:
+
+```sh
+krab migrate up default
+```
 

@@ -1,4 +1,41 @@
 ---
 ---
 
-TODO
+# Migration
+
+Migration resource is a single migrate operation.
+
+```hcl
+migration "<reference>" {
+  version = "<version>"
+
+  up {
+	sql = "..."
+  }
+
+  down {
+	sql = "..."
+  }
+}
+```
+
+- `<reference>` - is a migration reference name to use when connecting to other resources
+- `<version>` (optional) - name that will be used to identify migration in the database, if not specified is equal to the `reference`
+- `up` / `down` - migration direction, contains SQL code to be executed
+
+## Example
+
+```hcl
+migration "create_tenants" {
+  version = "20060102150405"
+
+  up {
+	sql = "CREATE TABLE tenants(name VARCHAR PRIMARY KEY)"
+  }
+
+  down {
+	sql = "DROP TABLE tenants"
+  }
+}
+```
+

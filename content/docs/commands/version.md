@@ -11,10 +11,6 @@ The `version` command prints the version of Krab.
 krab version
 ```
 
-### Options
-
-None.
-
 ## Example
 
 ```sh
