@@ -22,7 +22,7 @@ krab migrate down [set] [version]
 
 ## Example
 
-For `default` [migration set](/docs/configuration/migration/) and [migration](/docs/configuration/migration/) version `20060102150405` you would use:
+For `default` [migration set]({{< ref "docs/configuration/resources/migration_set" >}}) and [migration]({{< ref "docs/configuration/resources/migration" >}}) version `20060102150405` you would use:
 
 ```sh
 krab migrate down default 20060102150405

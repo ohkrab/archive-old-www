@@ -14,7 +14,7 @@ migration_set "<reference>" {
 ```
 
 - `<reference>` - migration set reference name
-- `migrations` - list of [migrations](/docs/configuration/migration) references
+- `migrations` - list of [migrations]({{< ref "docs/configuration/resources/migration" >}}) references
 
 ## Example
 

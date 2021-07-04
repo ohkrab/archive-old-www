@@ -1,4 +1,5 @@
 ---
+weight: 2
 ---
 
 # Installation
@@ -7,7 +8,7 @@ Krab binary can be downloaded from [GitHub](https://github.com/ohkrab/krab/relea
 
 ## asdf
 
-Krab provides `asdf` [plugin](https://github.com/ohkrab/asdf-krab):
+Krab provides [asdf plugin](https://github.com/ohkrab/asdf-krab):
 
 ```sh
 asdf plugin add krab https://github.com/ohkrab/asdf-krab.git
@@ -35,16 +36,16 @@ the path can be changed by `KRAB_DIR` environment variable.
 
 Pull the docker image:
 ```sh
-docker pull qbart/krab:latest
+docker pull ohkrab/krab-cli:latest
 ```
 
 Example:
 
 ```sh
-docker run --rm                          \
-        -e DATABASE_URL="..."            \
-        -v ${HOME}/project1:/etc/krab:ro \
-        qbart/krab:latest version
+docker run --rm                          \  # remove container after command execution
+        -e DATABASE_URL="..."            \  # provide connection string
+        -v ${HOME}/project1:/etc/krab:ro \  # mount configuration volume
+        ohkrab/krab-cli:latest version      # run `version` command from `qbart/krab:latest`
 ```
 
 
