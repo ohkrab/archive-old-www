@@ -9,7 +9,7 @@ The `migrate up` command migrates all pending migration for a given migration se
 After successful migration its `version` is put into database migration table (by default `schema_migrations`).
 At the beginning of an operation advisory lock is acquired to prevent other migrations to run simultaneously.
 
-{{<hint>}}
+{{<hint info>}}
 💡 Migrations are executed in the order defined by migration set, NOT lexicographically.
 <br>
 💡 When migration table does not exist it will be created
