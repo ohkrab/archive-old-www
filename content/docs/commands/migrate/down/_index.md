@@ -6,7 +6,7 @@ title: down
 
 The `migrate down` command rollbacks selected migration.
 
-After successful operation its `version` is removed from migration table.
+After successful operation its `version` is removed from the migration table.
 At the beginning of an operation advisory lock is acquired to prevent other operations to run simultaneously.
 
 ## Usage
