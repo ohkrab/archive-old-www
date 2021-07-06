@@ -18,5 +18,5 @@ weight: 3
 
 - migrations
 
-Do not use prelease versions.
+Do not use prerelease versions.
 

@@ -30,7 +30,7 @@ asdf local krab 0.2.4
 
 ## docker 
 
-To start a docker container `DATABASE_URL` environment variable must be provided.
+To start a docker container `DATABASE_URL` environment a variable must be provided.
 By default "krab" reads configuration from `/etc/krab` that must be mounted as a volume,
 the path can be changed by `KRAB_DIR` environment variable.
 
