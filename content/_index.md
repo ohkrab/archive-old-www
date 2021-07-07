@@ -12,3 +12,7 @@ It's still a work in progress, so currently the only supported features are:
 - migrations 
 
 Make sure to read an [overview]({{< ref "docs/get_started/overview" >}}) if you are here for the first time.
+
+Links:
+- [GitHub repository](https://github.com/ohkrab/krab)
+- [Releases](https://github.com/ohkrab/krab/releases)
