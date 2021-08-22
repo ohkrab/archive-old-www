@@ -7,7 +7,8 @@ Migration resource is a single migrate operation.
 
 ```hcl
 migration "<reference>" {
-  version = "<version>"
+  version     = "<version>"
+  transaction = true
 
   up {
 	sql = "..."
@@ -22,6 +23,7 @@ migration "<reference>" {
 - `<reference>` - is a migration reference name to use when connecting to other resources
 - `<version>` - name that will be used to identify migration in the database, can only be digits, alphanumeric characters and underscores
 - `up` / `down` - migration direction, contains SQL code to be executed
+- `transaction (optional)` - specifies whether run migration in a transaction (default: `true`)
 
 ## Example
 
