@@ -47,8 +47,12 @@ Example:
 docker run --rm                          \  # remove container after command execution
         -e DATABASE_URL="..."            \  # provide connection string
         -v ${HOME}/project1:/etc/krab:ro \  # mount configuration volume
-        ohkrab/krab-cli:latest version      # run `version` command from `qbart/krab:latest`
+        ohkrab/krab-cli:latest --version    # run `--version` command from `qbart/krab:latest`
 ```
 
+one-liner:
 
+```sh
+docker run --rm -e DATABASE_URL="..." -v ${HOME}/project1:/etc/krab:ro ohkrab/krab-cli:latest --version 
+```
 
