@@ -4,6 +4,10 @@ weight: 3
 
 # Changelog
 
+## 0.3.1
+
+- fixes issue with rolling back the same migration multiple times
+
 ## 0.3.0
 
 - fixes issues with concurrent operations
