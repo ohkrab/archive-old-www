@@ -16,4 +16,4 @@ Make sure to read an [overview]({{< ref "docs/get_started/overview" >}}) if you 
 Links:
 - [GitHub repository](https://github.com/ohkrab/krab)
 - [Releases](https://github.com/ohkrab/krab/releases)
-- [Docker hub 🐋](https://hub.docker.com/orgs/ohkrab)
+- [Docker hub 🐋](https://hub.docker.com/orgs/ohkrab/repositories)
