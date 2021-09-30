@@ -19,16 +19,18 @@ asdf plugin add krab git@github.com:ohkrab/asdf-krab.git
 Install desired version:
 
 ```sh
-asdf install krab 0.2.4
+asdf install krab 0.3.1
 ```
 
 Set it to your project:
 
 ```sh
-asdf local krab 0.2.4
+asdf local krab 0.3.1
 ```
 
 ## docker 
+
+Docker images can be found at [Docker hub 🐋](https://hub.docker.com/orgs/ohkrab)
 
 To start a docker container a `DATABASE_URL` environment variable must be provided.
 By default "krab" reads configuration from `/etc/krab` that must be mounted as a volume,
