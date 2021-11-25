@@ -38,7 +38,7 @@ the path can be changed by `KRAB_DIR` environment variable.
 
 Pull the docker image:
 ```sh
-docker pull ohkrab/krab-cli:latest
+docker pull ohkrab/krab:nightly
 ```
 
 Example:
@@ -47,12 +47,12 @@ Example:
 docker run --rm                          \  # remove container after command execution
         -e DATABASE_URL="..."            \  # provide connection string
         -v ${HOME}/project1:/etc/krab:ro \  # mount configuration volume
-        ohkrab/krab-cli:latest --version    # run `--version` command from `qbart/krab:latest`
+        ohkrab/krab:nightly --version    # run `--version` command from `qbart/krab:latest`
 ```
 
 one-liner:
 
 ```sh
-docker run --rm -e DATABASE_URL="..." -v ${HOME}/project1:/etc/krab:ro ohkrab/krab-cli:latest --version 
+docker run --rm -e DATABASE_URL="..." -v ${HOME}/project1:/etc/krab:ro ohkrab/krab:nightly --version 
 ```
 
