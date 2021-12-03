@@ -11,16 +11,21 @@ action "<namespace>" "<name>" {
     ...
   }
 
-  do {
-    sql = "..."
-  }
+  sql = "..."
 }
 ```
 
 - `<namespace>` - is a action namespace
 - `<name>` - is a migration reference name to use when connecting to other resources
-- `arguments` block - define arguments that can be used in `sql` as a variable, see [Resource arguments]({{< ref "docs/configuration/resource-arguments" >}}) for more details
+- `arguments` block (optional) - define arguments that can be used in `sql` as a variable, see [Resource arguments]({{< ref "docs/configuration/resource-arguments" >}}) for more details
 - `sql` - code to be executed
+
+## Arguments 
+
+These attributes can be used with arguments:
+
+- `sql`
+
 
 ## Example
 
