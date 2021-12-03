@@ -1,6 +1,6 @@
 <!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Migration Migration resource is a single migrate operation.
-migration &#34;<reference>&#34; { version = &#34;<version>&#34; transaction = true up { sql = &#34;...&#34; } down { sql = &#34;...&#34; } }  <reference> - is a migration reference name to use when connecting to other resources <version> - name that will be used to identify migration in the database, can only be digits, alphanumeric characters and underscores up / down - migration direction, contains SQL code to be executed transaction (optional) - specifies whether run migration in a transaction (default: true)  Example migration &#34;create_tenants&#34; { version = &#34;20060102150405&#34; up { sql = &#34;CREATE TABLE tenants(name VARCHAR PRIMARY KEY)&#34; } down { sql = &#34;DROP TABLE tenants&#34; } }"><meta name=theme-color content="#FFFFFF"><meta property="og:title" content><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://ohkrab.dev/docs/configuration/resources/migration/"><title>Migration | Oh Krab!</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.508cb7d44af698c8168fb53b994c078279d27ebf22955771fcc28c795a2e3aee.css integrity="sha256-UIy31Er2mMgWj7U7mUwHgnnSfr8ilVdx/MKMeVouOu4=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.22586ab26a01102a021e27d2c99e4fc31113949a4853928fc19436b6cc43dfe7.js integrity="sha256-IlhqsmoBECoCHifSyZ5PwxETlJpIU5KPwZQ2tsxD3+c=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://ohkrab.dev/docs/configuration/resources/migration/index.xml title="Oh Krab!"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo.svg alt=Logo><span>Oh Krab!</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li class=book-section-flat><span>Get Started</span><ul><li><a href=https://ohkrab.dev/docs/get_started/overview/>Overview</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/get_started/installation/>Installation</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/get_started/changelog/>Changelog</a><ul></ul></li></ul></li><li class=book-section-flat><span>Configuration</span><ul><li><a href=https://ohkrab.dev/docs/configuration/overview/>Overview</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/configuration/environment_variables/>Environment Variables</a><ul></ul></li><li><span>Resources</span><ul><li><a href=https://ohkrab.dev/docs/configuration/resources/migration/ class=active>Migration</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/configuration/resources/migration_set/>Migration Set</a><ul></ul></li></ul></li></ul></li><li class=book-section-flat><span>Functions</span><ul><li><a href=https://ohkrab.dev/docs/functions/filesystem/>Filesystem</a><ul></ul></li></ul></li><li class=book-section-flat><span>Commands</span><ul><li><span>Migrate</span><ul><li><a href=https://ohkrab.dev/docs/commands/migrate/down/>down</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/commands/migrate/up/>up</a><ul></ul></li></ul></li><li><a href=https://ohkrab.dev/docs/commands/version/>Version</a></li></ul></li></ul></nav><script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+migration &#34;<reference>&#34; { version = &#34;<version>&#34; transaction = true up { sql = &#34;...&#34; } down { sql = &#34;...&#34; } }  <reference> - is a migration reference name to use when connecting to other resources <version> - name that will be used to identify migration in the database, can only be digits, alphanumeric characters and underscores up / down - migration direction, contains SQL code to be executed transaction (optional) - specifies whether run migration in a transaction (default: true)  DSL Up/Down migration can use built-in DSL for Data Definition Language."><meta name=theme-color content="#FFFFFF"><meta property="og:title" content><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://ohkrab.dev/docs/configuration/resources/migration/"><title>Migration | Oh Krab!</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.508cb7d44af698c8168fb53b994c078279d27ebf22955771fcc28c795a2e3aee.css integrity="sha256-UIy31Er2mMgWj7U7mUwHgnnSfr8ilVdx/MKMeVouOu4=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.42e862e85c819256a5c384334df4295ef9594254b06ee1ae84ce9370aeaab293.js integrity="sha256-Quhi6FyBklalw4QzTfQpXvlZQlSwbuGuhM6TcK6qspM=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://ohkrab.dev/docs/configuration/resources/migration/index.xml title="Oh Krab!"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo.svg alt=Logo><span>Oh Krab!</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li class=book-section-flat><span>Get Started</span><ul><li><a href=https://ohkrab.dev/docs/get_started/overview/>Overview</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/get_started/installation/>Installation</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/get_started/changelog/>Changelog</a><ul></ul></li></ul></li><li class=book-section-flat><span>Configuration</span><ul><li><a href=https://ohkrab.dev/docs/configuration/overview/>Overview</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/configuration/environment_variables/>Environment Variables</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/configuration/resource-arguments/>Resource Arguments</a><ul></ul></li><li><span>Resources</span><ul><li><a href=https://ohkrab.dev/docs/configuration/resources/action/>Action</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/configuration/resources/migration/ class=active>Migration</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/configuration/resources/migration_set/>Migration Set</a><ul></ul></li></ul></li></ul></li><li class=book-section-flat><span>Functions</span><ul><li><a href=https://ohkrab.dev/docs/functions/filesystem/>Filesystem</a><ul></ul></li></ul></li><li class=book-section-flat><span>Commands</span><ul><li><a href=https://ohkrab.dev/docs/commands/action/>Action</a></li><li><span>Migrate</span><ul><li><a href=https://ohkrab.dev/docs/commands/migrate/down/>down</a><ul></ul></li><li><a href=https://ohkrab.dev/docs/commands/migrate/up/>up</a><ul></ul></li></ul></li><li><a href=https://ohkrab.dev/docs/commands/version/>Version</a></li></ul></li></ul></nav><script>(function(){var menu=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
 <strong>Migration</strong>
 <label for=toc-control></label></div></header><article class=markdown><h1 id=migration>Migration</h1><p>Migration resource is a single migrate operation.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#66d9ef>migration</span> <span style=color:#e6db74>&#34;&lt;reference&gt;&#34;</span> {
   version     <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&lt;version&gt;&#34;</span>
@@ -14,7 +14,7 @@ migration &#34;<reference>&#34; { version = &#34;<version>&#34; transaction = tr
 	sql <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;...&#34;</span>
   }
 }
-</code></pre></div><ul><li><code>&lt;reference></code> - is a migration reference name to use when connecting to other resources</li><li><code>&lt;version></code> - name that will be used to identify migration in the database, can only be digits, alphanumeric characters and underscores</li><li><code>up</code> / <code>down</code> - migration direction, contains SQL code to be executed</li><li><code>transaction (optional)</code> - specifies whether run migration in a transaction (default: <code>true</code>)</li></ul><h2 id=example>Example</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#66d9ef>migration</span> <span style=color:#e6db74>&#34;create_tenants&#34;</span> {
+</code></pre></div><ul><li><code>&lt;reference></code> - is a migration reference name to use when connecting to other resources</li><li><code>&lt;version></code> - name that will be used to identify migration in the database, can only be digits, alphanumeric characters and underscores</li><li><code>up</code> / <code>down</code> - migration direction, contains SQL code to be executed</li><li><code>transaction (optional)</code> - specifies whether run migration in a transaction (default: <code>true</code>)</li></ul><h2 id=dsl>DSL</h2><p>Up/Down migration can use built-in DSL for Data Definition Language.</p><blockquote class="book-hint info">DSL order matters, code will run in that order (<code>sql</code> attribute order also matters)</blockquote><p>Supported DDL:</p><ul><li><a href=https://github.com/ohkrab/krab/blob/master/krab/type_ddl_create_table.go#L11>CREATE TABLE</a></li><li><a href=https://github.com/ohkrab/krab/blob/master/krab/type_ddl_drop_table.go#L11>DROP TABLE</a></li><li><a href=https://github.com/ohkrab/krab/blob/master/krab/type_ddl_create_index.go#L11>CREATE INDEX</a></li><li><a href=https://github.com/ohkrab/krab/blob/master/krab/type_ddl_drop_index.go#L11>DROP INDEX</a></li></ul><h2 id=example>Example</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#66d9ef>migration</span> <span style=color:#e6db74>&#34;create_tenants&#34;</span> {
   version <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;20060102150405&#34;</span>
 
   <span style=color:#66d9ef>up</span> {
@@ -25,7 +25,142 @@ migration &#34;<reference>&#34; { version = &#34;<version>&#34; transaction = tr
 	sql <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;DROP TABLE tenants&#34;</span>
   }
 }
-</code></pre></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ohkrab/www/commit/53375a651c8e2aa2881822437df297c033a1a791 title="Last modified by qbart | 22 August 2021" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>22 August 2021</span></a></div><div><a class="flex align-center" href=https://github.com/ohkrab/www/edit/master/content/docs/configuration/resources/migration/_index.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
+</code></pre></div><h2 id=dsl-example>DSL example</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#66d9ef>migration</span> <span style=color:#e6db74>&#34;create_categories&#34;</span> {
+  version <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;v1&#34;</span>
+
+  <span style=color:#66d9ef>up</span> {
+    <span style=color:#66d9ef>create_table</span> <span style=color:#e6db74>&#34;categories&#34;</span> {
+	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;id&#34; &#34;bigint&#34;</span> {}
+	  column &#34;name&#34; &#34;varchar&#34; { null <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span> }
+
+	  primary_key { columns <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;id&#34;</span>] }
+	}
+  }
+
+  <span style=color:#66d9ef>down</span> {
+    <span style=color:#66d9ef>drop_table</span> <span style=color:#e6db74>&#34;categories&#34;</span> {}
+  }
+}
+
+<span style=color:#66d9ef>migration</span> <span style=color:#e6db74>&#34;create_animals&#34;</span> {
+  version <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;v2&#34;</span>
+
+  <span style=color:#66d9ef>up</span> {
+	<span style=color:#66d9ef>create_table</span> <span style=color:#e6db74>&#34;animals&#34;</span> {<span style=color:#75715e>
+</span><span style=color:#75715e>      # &#34;id&#34; bigint GENERATED ALWAYS AS IDENTITY
+</span><span style=color:#75715e></span>	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;id&#34; &#34;bigint&#34;</span> {
+		<span style=color:#66d9ef>identity</span> {}
+	  }
+
+	  column &#34;name&#34; &#34;varchar&#34; { null <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span> }
+	  
+	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;extinct&#34; &#34;boolean&#34;</span> {
+	    null    <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>
+		default <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
+	  }
+
+	  column &#34;weight_kg&#34; &#34;int&#34; { null <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span> }<span style=color:#75715e>
+</span><span style=color:#75715e>
+</span><span style=color:#75715e>      # &#34;weight_g&#34; int GENERATED ALWAYS AS (weight_kg * 1000) STORED
+</span><span style=color:#75715e></span>	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;weight_g&#34; &#34;int&#34;</span> {
+		<span style=color:#66d9ef>generated</span> {
+		  as <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;weight_kg * 1000&#34;</span> 
+		}
+	  }
+
+	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;category_id&#34; &#34;bigint&#34;</span> {
+	    null <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>
+	  }
+
+	  <span style=color:#66d9ef>unique</span> {
+		columns <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;name&#34;</span>]
+		include <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;weight_kg&#34;</span>]
+	  }
+
+	  <span style=color:#66d9ef>primary_key</span> {
+	    columns <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;id&#34;</span>]
+		include <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;name&#34;</span>]
+	  }<span style=color:#75715e>
+</span><span style=color:#75715e>
+</span><span style=color:#75715e>      # CONSTRAINT &#34;ensure_positive_weight&#34; CHECK (weight_kg &gt; 0)
+</span><span style=color:#75715e></span>	  <span style=color:#66d9ef>check</span> <span style=color:#e6db74>&#34;ensure_positive_weight&#34;</span> {
+	    expression <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;weight_kg &gt; 0&#34;</span>
+	  }
+
+	  <span style=color:#66d9ef>foreign_key</span> {
+	    columns <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;category_id&#34;</span>]
+
+		<span style=color:#66d9ef>references</span> <span style=color:#e6db74>&#34;categories&#34;</span> {
+		  columns <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;id&#34;</span>]
+
+		  on_delete <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;cascade&#34;</span>
+		  on_update <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;cascade&#34;</span>
+		}
+	  }
+	}
+  }
+
+  <span style=color:#66d9ef>down</span> {
+    <span style=color:#66d9ef>drop_table</span> <span style=color:#e6db74>&#34;animals&#34;</span> {}
+  }
+}
+
+<span style=color:#66d9ef>migration_set</span> <span style=color:#e6db74>&#34;animals&#34;</span> {
+  migrations <span style=color:#f92672>=</span> [
+    <span style=color:#66d9ef>migration</span>.<span style=color:#66d9ef>create_categories</span>,
+    <span style=color:#66d9ef>migration</span>.<span style=color:#66d9ef>create_animals</span>
+  ]
+}
+</code></pre></div><h2 id=dsl-index-example>DSL index example</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#66d9ef>migration</span> <span style=color:#e6db74>&#34;create_animals&#34;</span> {
+  version <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;v1&#34;</span>
+  transaction <span style=color:#f92672>=</span> <span style=color:#66d9ef>false</span>
+
+  <span style=color:#66d9ef>up</span> {
+	<span style=color:#66d9ef>create_table</span> <span style=color:#e6db74>&#34;animals&#34;</span> {
+	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;id&#34; &#34;bigint&#34;</span> {}
+
+	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;name&#34; &#34;varchar&#34;</span> {}
+	  
+	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;extinct&#34; &#34;boolean&#34;</span> {}
+
+	  <span style=color:#66d9ef>column</span> <span style=color:#e6db74>&#34;weight_kg&#34; &#34;int&#34;</span> {}
+	}<span style=color:#75715e>
+</span><span style=color:#75715e>
+</span><span style=color:#75715e>    # CREATE UNIQUE INDEX &#34;idx_uniq_name&#34; ON &#34;animals&#34; USING btree (&#34;name&#34;) INCLUDE (&#34;weight_kg&#34;)
+</span><span style=color:#75715e></span>	<span style=color:#66d9ef>create_index</span> <span style=color:#e6db74>&#34;animals&#34; &#34;idx_uniq_name&#34;</span> {
+	  unique  <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
+	  columns <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;name&#34;</span>]
+	  using   <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;btree&#34;</span>
+	  include <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;weight_kg&#34;</span>]
+	}<span style=color:#75715e>
+</span><span style=color:#75715e>
+</span><span style=color:#75715e>    # CREATE INDEX CONCURRENTLY &#34;idx_heavy_animals&#34; ON &#34;animals&#34; (&#34;weight_kg&#34;) WHERE (weight_kg &gt; 5000)
+</span><span style=color:#75715e></span>	<span style=color:#66d9ef>create_index</span> <span style=color:#e6db74>&#34;animals&#34; &#34;idx_heavy_animals&#34;</span> {
+	  columns      <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;weight_kg&#34;</span>]
+	  where        <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;weight_kg &gt; 5000&#34;</span>
+	  concurrently <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
+	}
+  }
+
+  <span style=color:#66d9ef>down</span> {
+    <span style=color:#66d9ef>drop_index</span> <span style=color:#e6db74>&#34;public.idx_uniq_name&#34;</span> {
+	  cascade <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
+	}
+
+    <span style=color:#66d9ef>drop_index</span> <span style=color:#e6db74>&#34;idx_heavy_animals&#34;</span> {
+	  concurrently <span style=color:#f92672>=</span> <span style=color:#66d9ef>true</span>
+	}
+
+    <span style=color:#66d9ef>drop_table</span> <span style=color:#e6db74>&#34;animals&#34;</span> {}
+  }
+}
+
+<span style=color:#66d9ef>migration_set</span> <span style=color:#e6db74>&#34;animals&#34;</span> {
+  migrations <span style=color:#f92672>=</span> [
+    <span style=color:#66d9ef>migration</span>.<span style=color:#66d9ef>create_animals</span>
+  ]
+}
+</code></pre></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/ohkrab/www/commit/3548c4f756b13c24adb8bc726dca919b18ff9f6b title="Last modified by qbart | 3 December 2021" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>3 December 2021</span></a></div><div><a class="flex align-center" href=https://github.com/ohkrab/www/edit/master/content/docs/configuration/resources/migration/_index.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
 <span>Edit this page</span></a></div></div><script>(function(){function select(element){const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(element);selection.removeAllRanges();selection.addRange(range);}
 document.querySelectorAll("pre code").forEach(code=>{code.addEventListener("click",function(event){select(code.parentElement);if(navigator.clipboard){navigator.clipboard.writeText(code.parentElement.textContent);}});});})();</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div></main></body></html>
