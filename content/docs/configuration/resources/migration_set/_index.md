@@ -7,6 +7,8 @@ Migration Set is a collection of migrations.
 
 ```hcl
 migration_set "<reference>" {
+  schema = "public"
+
   migrations = [
     ...
   ]
@@ -14,7 +16,26 @@ migration_set "<reference>" {
 ```
 
 - `<reference>` - migration set reference name
+- `schema`, optional - schema name where to create `schema_migrations` table and run migrations (`SET search_path TO <schema>` is executed before each migration)
 - `migrations` - list of [migrations]({{< ref "docs/configuration/resources/migration" >}}) references
+
+## Arguments 
+
+These attributes can be used with arguments:
+
+- `schema` - value is automatically quoted
+
+```hcl
+migration_set "tenant" {
+  arguments {
+    arg "schema" {}
+  }
+
+  schema = "{{.Args.schema}}"
+
+  migrations = [...]
+}
+```
 
 ## Example
 
