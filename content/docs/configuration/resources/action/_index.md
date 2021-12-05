@@ -37,7 +37,7 @@ action "view" "refresh" {
     }
   }
 
-  sql = "REFRESH MATERIALIZED VIEW {{ quote .Args.name }}"
+  sql = "REFRESH MATERIALIZED VIEW {{ .Args.name | quote_ident }}"
 }
 ```
 

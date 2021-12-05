@@ -38,7 +38,7 @@ Arguments are not quoted by default unless stated otherwise ⚠️.
 Example:
 
 ```
-sql = "CREATE SCHEMA {{ quote .Args.name }}"
+sql = "CREATE SCHEMA {{ quote_ident .Args.name }}"
 ```
 
 All arguments must be prefixed with `.Args`.
@@ -48,5 +48,5 @@ All arguments must be prefixed with `.Args`.
 
 There are built-in functions that allow to operate on arguments before final template is rendered.
 
-- `quote` - quotes identifiers in database, for example: table/column names 
+- `quote_ident` - quotes identifiers in database, for example: table/column names 
 

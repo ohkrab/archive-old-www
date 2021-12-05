@@ -6,6 +6,12 @@ weight: 3
 
 ## 0.4.0
 
+- migration status action
+- be explicit about identifier quoting (`quote` -> `quote_ident`)
+- improved CLI UI
+
+## 0.4.0
+
 - migration DSL (not only raw sql)
 - custom schema for migration sets (new attribute)
 - actions (new resource)
