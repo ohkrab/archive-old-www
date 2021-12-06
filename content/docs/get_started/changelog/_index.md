@@ -4,7 +4,7 @@ weight: 3
 
 # Changelog
 
-## 0.4.0
+## 0.4.1
 
 - migration status action
 - be explicit about identifier quoting (`quote` -> `quote_ident`)
