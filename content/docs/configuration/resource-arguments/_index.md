@@ -24,7 +24,7 @@ resource ["label" ["label"...]] {
 ```
 
 - `arg "name"` - argument name
-- `description` - summary of a argument 
+- `description` - summary of an argument 
 - `type` - currently can only be a `string` type
 - arguments are required to pass into command
 
