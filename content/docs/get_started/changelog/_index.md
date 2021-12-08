@@ -4,6 +4,11 @@ weight: 3
 
 # Changelog
 
+## 0.4.2
+
+- add quote support for values
+- add support for more defaults in column DSL
+
 ## 0.4.1
 
 - migration status action

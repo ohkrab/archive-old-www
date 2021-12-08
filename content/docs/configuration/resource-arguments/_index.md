@@ -49,4 +49,5 @@ All arguments must be prefixed with `.Args`.
 There are built-in functions that allow to operate on arguments before final template is rendered.
 
 - `quote_ident` - quotes identifiers in database, for example: table/column names 
+- `quote` - quotes values in database
 
