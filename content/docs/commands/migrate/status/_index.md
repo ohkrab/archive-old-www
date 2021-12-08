@@ -18,7 +18,7 @@ krab migrate status [set]
 
 ### Example output
 
-```
+```sh
 krab migrate status animals
 
 ✔ v1 create_animals
