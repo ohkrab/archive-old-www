@@ -4,6 +4,11 @@ weight: 3
 
 # Changelog
 
+## 0.5.0
+
+- rewrite parser from hclsimple to schema based decoding
+- make defaults in columns DSL universal (raw SQL, no custom HCL type)
+
 ## 0.4.2
 
 - add quote support for values

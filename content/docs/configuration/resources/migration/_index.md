@@ -90,7 +90,7 @@ migration "create_animals" {
 	  
 	  column "extinct" "boolean" {
 	    null    = false
-		default = true
+		default = "TRUE"
 	  }
 
 	  column "weight_kg" "int" { null = false }
