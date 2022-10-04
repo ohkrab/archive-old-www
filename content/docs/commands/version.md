@@ -15,6 +15,6 @@ krab version
 
 ```sh
 $ krab version
-krab 0.2.4
+krab 0.5.0
 Build a2aa572cd37e64c38f16925c1152a2bed1fc4c0a 2021-07-04
 ```

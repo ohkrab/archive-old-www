@@ -19,13 +19,13 @@ asdf plugin add krab git@github.com:ohkrab/asdf-krab.git
 Install desired version:
 
 ```sh
-asdf install krab 0.4.2
+asdf install krab 0.5.0
 ```
 
 Set it to your project:
 
 ```sh
-asdf local krab 0.4.2
+asdf local krab 0.5.0
 ```
 
 ## docker 
